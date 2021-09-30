@@ -1,0 +1,1 @@
+This app will calculate your stock is profit or loss compare to current price of stock

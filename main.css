@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(129, 188, 236);
+    outline: 0.4rem;
+    margin: 90px;
+}
+.container{
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+label{
+    margin: 10px 0px;
+}
+input{
+    height: 35px;
+    border-radius: 1rem;
+    outline: 0.4rem;
+}
+#btn-check{
+    margin: 10px 0px;
+    height: 35px;
+    border-radius: 0.1rem;
+    outline: 0.4rem;
+}
