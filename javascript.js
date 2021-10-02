@@ -11,6 +11,8 @@ function CalculateStockStatus(){
     const sellingPrice=Number(initInput.value) ;
     const CostPriceNow=Number(currentInput.value);
     const Quantity=Number(QuantityInput.value);
+    if(sellingPrice && CostPriceNow && Quantity > 0)
+    {
     if(CostPriceNow>sellingPrice){
         let profit=(CostPriceNow-sellingPrice)*Quantity;
         let profitPercentage=(profit/sellingPrice)*100;
@@ -27,5 +29,9 @@ function CalculateStockStatus(){
     else{
         outputDisplay.innerText="No loss No profit your money is sleeping"
     }
+}else
+{
+    outputDisplay.innerText="Please enter positive inputs"
+}
 }
 
