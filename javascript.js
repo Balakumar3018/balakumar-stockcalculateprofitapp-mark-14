@@ -11,7 +11,7 @@ function CalculateStockStatus(){
     const sellingPrice=Number(initInput.value) ;
     const CostPriceNow=Number(currentInput.value);
     const Quantity=Number(QuantityInput.value);
-    if(sellingPrice && CostPriceNow && Quantity > 0)
+    if(sellingPrice >0 && CostPriceNow >0 && Quantity > 0)
     {
     if(CostPriceNow>sellingPrice){
         let profit=(CostPriceNow-sellingPrice)*Quantity;
